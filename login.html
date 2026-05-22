@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ | LPR System</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="login-left">
+            <p class="subtitle">LPR SYSTEM</p>
+            <h2>AI VISION SCAN</h2>
+            <div class="image-placeholder">
+                <img src="assets/login-page/left-side.jpg" alt="AI Vision Camera 3D" style="width: 100%; border-radius: 12px;">
+            </div>
+        </div>
+
+        <div class="login-right">
+            <h2>ยินดีต้อนรับกลับมา</h2>
+            <p class="desc">ระบบตรวจจับแผ่นป้ายทะเบียนรถ</p>
+            
+            <form action="#" class="login-form js-login-form" autocomplete="off">
+                <div class="input-group">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" class="js-username" placeholder="ชื่อผู้ใช้งาน" required autocomplete="off">
+                </div>
+                
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="js-password" placeholder="รหัสผ่าน" required autocomplete="new-password">
+                </div>
+                
+                <p class="js-error-message" style="color: #e91e63; font-size: 14px; margin-bottom: 10px; display: none;"></p>
+
+                <button type="submit" class="login-btn">เข้าสู่ระบบ</button>
+            </form>
+            
+            <p class="forgot-pwd">ลืมรหัสผ่าน? ติดต่อแอดมิน</p>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="scripts/login.js"></script>
+</body>
+</html>
